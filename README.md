@@ -5,6 +5,11 @@ A simple Game build using Vue.js
 
 * [Vue Js](https://vuejs.org/) - The Js framework used
 
+## Some ScreenShots
+
+### Initial Stage
+![Initial Stage](/screenshot/initial_stage.png)
+
 ## Authors
 
 * **Rabin Gaire**
