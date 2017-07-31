@@ -10,6 +10,15 @@ A simple Game build using Vue.js
 ### Initial Stage
 ![Initial Stage](/screenshot/initial_stage.png)
 
+### After few punch
+![After few punch](/screenshot/after_few_punch.png)
+
+### After more more punch
+![After more more punch](/screenshot/after_more_more_punch.png)
+
+### After Brust
+![After Brust](/screenshot/after_brust.png)
+
 ## Authors
 
 * **Rabin Gaire**
