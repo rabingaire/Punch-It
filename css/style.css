@@ -1,0 +1,47 @@
+#punch-bag {
+    height: 539px;
+    width: 200px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+#punch-bag #healthy {
+    height: 100%;
+    width: 100%;
+    background-image: url("./../assets/bag.png");
+}
+
+#punch-bag #burst {
+    height: 100%;
+    width: 100%;
+    background-image: url("./../assets/bag-burst.png");
+}
+
+#punch-bag-health {
+    height: 10px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+#punch-bag-health #green-color {
+    height: 100%;
+    width: 100%;
+    background-color: #13771e; 
+}
+
+#punch-bag-health #orange-color {
+    height: 100%;
+    width: 100%;
+    background-color: #f4b642; 
+}
+
+#punch-bag-health #red-color {
+    height: 100%;
+    width: 100%;
+    background-color: #A4001F; 
+}
+
+#game-controller {
+    text-align: center;
+    margin: 20px 0;
+}

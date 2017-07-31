@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Punch It</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css" />
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+    <body>
+        <div id="app">
+            <div id="punch-bag">
+                <div :id="bagState"></div>
+            </div>
+
+            <div id="punch-bag-health">
+                <div :style="{width: `${this.health}%`}" :id="healthState"></div>
+            </div>
+
+            <div id="game-controller">
+                <input type="button" value="Punch" @click="punch" v-if="!isZeroHealth"/>
+                <input type="button" value="Restart" @click="restart" />
+            </div>
+        </div>
+
+        <script>
+            new Vue ({
+                el: '#app',
+                data: {
+                    health: 100
+                }, 
+                methods: {
+                    punch: function() {
+                        this.health -= 10
+                    },
+
+                    restart: function() {
+                        this.health = 100
+                    }
+                },
+                computed: {
+                    isZeroHealth: function() {
+                        return (this.health <= 0) ? true: false;
+                    }, 
+
+                    bagState: function() {
+                        return (this.health <= 0) ? "burst" : "healthy";
+                    },
+
+                    healthState: function() {
+                        if (this.health <= 100 && this.health > 60) {
+                            return "green-color"
+                        } else if (this.health <= 60 && this.health >= 30) {
+                            return "orange-color"
+                        } else {
+                            return "red-color"
+                        }
+                    }
+                }
+            })
+        </script>
+    </body>
+</html>
